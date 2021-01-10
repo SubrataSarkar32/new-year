@@ -47,7 +47,7 @@ body{        background-image: url("https://i.postimg.cc/wj68sBBf/happy.png");te
 </style>
 <body>
 
-<h2>Happy New Year 2019!!!</h2>
+ <h2>Happy New Year <span id="demo2">2019</span>!!!</h2>
 
 <button class="button" onclick="myFunction()" style="vertical-align:middle"><span>Click</span></button>
 
@@ -63,6 +63,11 @@ function myFunction() {
     txt =  person + " Happy New Year!";
   }
   document.getElementById("demo").innerHTML = txt;
+}
+ function myFunction2() {
+  var d = new Date("July 21, 1983 01:15:00");
+  var n = d.getFullYear();
+  document.getElementById("demo2").innerHTML = n;
 }
 </script>
 
